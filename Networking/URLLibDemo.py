@@ -8,6 +8,5 @@ except urllib.error.HTTPError:
     print("The webpage is not found.")
     exit()
 
-f = open("python.html","wb")
-f.write(content)
-f.close()
+with open("python.html","wb") as f:
+    f.write(content)

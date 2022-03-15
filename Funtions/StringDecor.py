@@ -7,6 +7,6 @@ def decorfun(hello):
 
 @decorfun
 def hello(name):
-    return "Hello "+name
+    return f"Hello {name}"
 
 print(hello("Noon"))

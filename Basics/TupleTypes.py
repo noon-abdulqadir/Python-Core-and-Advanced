@@ -5,7 +5,7 @@ print(tpl[3])
 print(tpl*3)
 print(tpl.count(40))
 print(tpl.index("xyz"))
-print(tpl[0:5])
+print(tpl[:5])
 
 lst=[67,44,55,"xyz"]
 print(type(lst))

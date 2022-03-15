@@ -13,12 +13,12 @@ print(s*3)
 print(len(s1))
 print(len(s))
 
-print(s[0:5])
-print(s[0:])
+print(s[:5])
+print(s[:])
 print(s[:8])
 print(s[-3:-1])
 
-print(s[0:9:2])
+print(s[:9:2])
 print(s[15::-1])
 print(s[::-1])
 

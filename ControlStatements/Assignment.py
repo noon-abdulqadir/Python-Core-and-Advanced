@@ -6,17 +6,12 @@ for i in range(1,x+1):
     while i<=100:
         print(i)
         break
-    
+
 n=int(input("Enter a number: "))
 
-prime_flag = True
-
-for i in range(2,n-1):
-    if n%i==0:
-        prime_flag = False
-
-if prime_flag==True:
-    print(n,"is a prime number.")
-elif prime_flag==False:
+prime_flag = all(n%i != 0 for i in range(2, n-1))
+if not prime_flag:
     print(n,"is not a prime number.")
+else:
+    print(n,"is a prime number.")
         

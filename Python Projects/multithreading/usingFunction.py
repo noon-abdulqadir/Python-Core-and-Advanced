@@ -1,11 +1,9 @@
 from threading import *
 
 def displayNumbers():
-    i = 0
     print(current_thread().getName())
-    while(i<=10):
+    for i in range(11):
         print(i)
-        i+=1
 
 print(current_thread().getName())
 t = Thread(target=displayNumbers)

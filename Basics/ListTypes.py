@@ -24,13 +24,12 @@ lst.extend([4])
 print(lst)
 print(lst[::-1])
 
-countries_lst = ["sudan","netherlands","malaysia","spain"]
-countries_lst.append("italy")
+countries_lst = ["sudan", "netherlands", "malaysia", "spain", "italy"]
 print(countries_lst)
 
 del(countries_lst[3])
 print(countries_lst)
 
-x=int(len(countries_lst)/2)
+x = len(countries_lst) // 2
 countries_lst.insert(x,"austria")
 print(countries_lst)
