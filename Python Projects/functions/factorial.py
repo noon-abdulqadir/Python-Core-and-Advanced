@@ -1,8 +1,4 @@
 def factorial(n):
-    if n==0:
-        result=1
-    else:
-        result=n*factorial(n-1)
-    return result
+    return 1 if n==0 else n*factorial(n-1)
 
 print(factorial(3))

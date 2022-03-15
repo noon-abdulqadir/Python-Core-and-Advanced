@@ -1,4 +1,4 @@
-s={10,20,30,"xyz",10,20}
+s = {30, "xyz", 10, 20}
 print(s)
 print(type(s))
 

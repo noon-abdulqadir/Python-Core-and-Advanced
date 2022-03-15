@@ -8,7 +8,7 @@ class Producer:
         
     def produce(self):
         for i in range(1,5):
-            self.products.append("Product"+str(i))
+            self.products.append(f"Product{str(i)}")
             sleep(1)
             print("Item Added")
         self.ordersplaced = True

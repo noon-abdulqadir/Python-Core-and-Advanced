@@ -13,7 +13,7 @@ s.listen(1)
 
 c,addr = s.accept()
 
-print("Connection from:",str(addr))
+print("Connection from:", addr)
 
 c.send(b"Hello, how are you?")
 c.send("Bye".encode())

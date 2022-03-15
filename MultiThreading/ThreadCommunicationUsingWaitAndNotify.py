@@ -9,12 +9,12 @@ class Producer:
     
     def produce(self):
         self.c.acquire()
-        
+
         for i in range(1,5):
-            self.products.append("Product "+str(i))
+            self.products.append(f"Product {str(i)}")
             sleep(1)
             print("Item added:",self.products[-1])
-        
+
         self.c.notify()
         self.c.release()
 

@@ -16,10 +16,9 @@ c,addr = s.accept()
 fileName = c.recv(1024)
 
 try:
-    f = open(fileName,"rb")
-    content = f.read()
-    c.send(content)
-    f.close()
+    with open(fileName,"rb") as f:
+        content = f.read()
+        c.send(content)
 except FileNotFoundError:
     c.send(b"File does not exist")
 

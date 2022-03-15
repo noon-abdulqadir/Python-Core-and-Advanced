@@ -1,6 +1,5 @@
 import pickle
 
-f = open("student.dat","rb")
-obj = pickle.load(f)
-obj.display()
-f.close()
+with open("student.dat","rb") as f:
+    obj = pickle.load(f)
+    obj.display()

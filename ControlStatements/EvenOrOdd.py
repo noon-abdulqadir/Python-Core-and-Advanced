@@ -16,13 +16,13 @@ min_val = min(subjects.values())
 if min_val <= 35:
     for k,v in subjects.items():
         if v==min_val:
-            print("You Have failed %s."% k)
-elif min_val > 35:
+            print(f"You Have failed {k}.")
+else:
     print("You have passed the exams.")
     av=float(maths+physics+chemistry)/3
     if av<=59:
         print("You're grade is C. Your average grade is %.2f."%av)
     elif av<=69:
         print("You're grade is B. Your average grade is %.2f."%av)
-    elif av>69:
+    else:
         print("You're grade is A. Your average grade is %.2f."%av)

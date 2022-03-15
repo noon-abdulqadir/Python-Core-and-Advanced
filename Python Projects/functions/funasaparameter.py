@@ -1,5 +1,5 @@
 def display(fun):
-    return "Hello "+fun
+    return f"Hello {fun}"
 
 def name():
     return "Bharath"

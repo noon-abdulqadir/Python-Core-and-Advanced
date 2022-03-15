@@ -1,12 +1,10 @@
-f = open("myfile.txt","w")
-print("Enter text (type # when you are done): ")
+with open("myfile.txt","w") as f:
+    print("Enter text (type # when you are done): ")
 
-s = ""
-while s!="#":
-    s = input()
-    f.write(s+"\n")
-
-f.close()
+    s = ""
+    while s!="#":
+        s = input()
+        f.write(s+"\n")
 
 with open ("myfileopen.txt","w") as f:
     s = input("Enter text: ")

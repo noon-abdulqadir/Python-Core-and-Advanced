@@ -1,13 +1,13 @@
 for i in range(1,101):
     
-    mulOf3 = True if i % 3 == 0 else False
-    mulOf5 = True if i % 5 == 0 else False
-    
-    if mulOf3 == True and mulOf5 == True:
+    mulOf3 = i % 3 == 0
+    mulOf5 = i % 5 == 0
+
+    if mulOf3 and mulOf5:
         print("FizzBuzz")
-    elif mulOf3 == True:
+    elif mulOf3:
         print("Fizz")
-    elif mulOf5 == True:
+    elif mulOf5:
         print("Buzz")
     else:
         print(i)
